@@ -1,0 +1,19 @@
+{
+  "name": "refresh-terminal-env",
+  "displayName": "Refresh Terminal Env",
+  "description": "Status bar button that reloads Windows PATH/env into VS Code terminals without restarting VS Code.",
+  "version": "1.1.0",
+  "publisher": "ParadigmTechnologies",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/AbdulAhaadChohan/Refresh-ENV" },
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Other"],
+  "keywords": ["path", "environment", "terminal", "windows", "refresh"],
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [
+      { "command": "refreshTerminalEnv.run", "title": "Refresh Terminal Environment (PATH)" }
+    ]
+  }
+}
